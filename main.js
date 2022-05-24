@@ -1,3 +1,5 @@
+const cards = document.querySelector('.cards')
+
 let myLibrary = [];
 
 function Book(title, author, pages, read) {
@@ -20,7 +22,13 @@ function addBookToLibrary(title, author, pages, read) {
     myLibrary.push(new Book(title, author, pages, read)) ;
 }
 
-addBookToLibrary('Narnia', 'John Smith', 245, true);
-addBookToLibrary('Space Odyssey', 'Daniel Goodman', 360, false)
+addBookToLibrary('Breaking the Habit of Being Yourself', 'Dr. Joe Dispenza', 368, true);
+addBookToLibrary('Deep Work', 'Cal Newport', 304, true)
+addBookToLibrary('Beyond Order', 'Jordan B. Peterson', 432, false)
 
-console.log(myLibrary[1].info())
+myLibrary.forEach(book => {
+    const div = document.createElement('div');
+    div.classList.add('card');
+    div.textContent = book.info();
+    cards.insertAdjacentElement("afterbegin", div);
+})
