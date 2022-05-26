@@ -51,6 +51,10 @@ body {
 	border: 4px solid white;
 	max-width: 55vw;
 	word-wrap: break-word;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	padding: 48px;
 }
 
 .fixed-button {
@@ -66,4 +70,140 @@ body {
 	background-color: blueviolet;
 	border: 4px white solid;
 	border-radius: 25px;
+	cursor: pointer;
 }
+
+.bg-modal {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.modal-content {
+	width: 50vw;
+	height: 25vw;
+	background-color: white;
+	border-radius: 25px;
+	font-size: 24px;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	position: relative;
+}
+
+
+.closeCard {
+	display: flex;
+	justify-content: end;
+	position: absolute;
+	top: 0;
+	right: 14px;
+	font-size: 42px;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+
+.close {
+	display: flex;
+	justify-content: end;
+	position: absolute;
+	top: 0;
+	right: 14px;
+	font-size: 42px;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+.modal-title {
+	display: flex;
+	justify-content: center;
+	font-size: 48px;
+}
+
+.title-author {
+	display: flex;
+	justify-content: space-around;
+}
+
+.pages-radio {
+	display: flex;
+	justify-content: space-around;
+}
+
+.title-section {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.author-section {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.pages-section {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.yes-no-section {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.radio {
+	display: flex;
+	gap: 48px;
+	align-items: center;
+	justify-content: center;
+}
+
+input {
+    border: 4px solid black;
+	border-radius: 12px;
+	padding: 10px;
+}
+
+input[type='radio'] {
+	height: 24px;
+	width: 24px;
+	vertical-align: middle;
+	margin-right: 15px;
+  }
+
+.button-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.submit-button {
+	padding: 24px;
+	padding-left: 48px;
+	padding-right: 48px;
+	border-radius: 25px;
+	background-color: blueviolet;
+	color: white;
+	cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* div {
+	border: 1px solid red;
+} */

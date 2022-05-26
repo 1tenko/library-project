@@ -28,7 +28,56 @@
                 <button class="fixed-button">ADD A NEW BOOK</button>
             </div>
         </div>
-        
+    </div>
+
+    <div class="bg-modal">
+        <form method="post" id="submit"> 
+
+            <div class="modal-content">
+                <div class="close">
+                    +
+                </div>
+                    <div class="modal-title">
+                         Add a book to the Library
+                    </div>
+                    <div class="title-author">
+                        <div class="title-section">
+                            <label for="title">Title</label>
+                            <input type="text" name="title" id="title" required>
+                        </div>
+                        
+                        <div class="author-section">
+                            <label for="author">Author</label>
+                            <input type="text" name="author" id="author">
+                        </div>
+                    </div>
+                    
+                    <div class="pages-radio">
+                        
+                        <div class="pages-section">
+                            <label for="pages">Pages</label>
+                            <input type="number" name="pages" id="pages">
+                        </div>
+                        
+                        <div class="yes-no-section">
+                            <label for="yes-no">Have you read this book?</label>
+                            <div class="radio">
+                                <div>
+                                    <input type="radio" name="yes-no" id="yes">Yes</input>
+                                </div>
+                                <div>
+                                    <input type="radio" name="yes-no" 
+                                    id="no">No</input>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="button-section">
+                        <button type="submit" class="submit-button">ADD</button>
+                    </div>
+                </form>
+            </div>
     </div>
 </body>
 </html>
